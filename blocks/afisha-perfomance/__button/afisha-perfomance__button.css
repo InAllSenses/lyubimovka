@@ -20,23 +20,61 @@
     border: 1px solid #242424;
     border-top: none;
     border-right: none;
+
+    position: relative;
+    background: none;
+    cursor: pointer;
+    z-index: 1;
 }
 
+/* псевдоэлемент для стрелочки на кнопке */
+.afisha-perfomance__button::after {
+    content: ' '; 
+    position: absolute ; 
+    top: -8px;
+    right: 157px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    background: url('../images/Button-arrow.svg') no-repeat; 
+    rotate: 180deg;
+    width: 25px;
+    height: 25px;
+}
+
+.afisha-perfomance__button:hover {
+    color: #ECEBE8;
+}
+
+/* псевдоэлемент для стрелочки на кнопке */
+.afisha-perfomance__button:hover::after {
+    background: url('../images/Button-arrow-hover.svg') no-repeat; 
+}
+
+.afisha-perfomance__button:before {
+    content: "";
+    position: absolute;
+    background: #383736;
+	bottom: -1px;
+	right: -1px;
+	width: 0;
+	height: 102%;
+    transition: all 0.2s ease-in;
+    z-index: -1;
+}
+
+.afisha-perfomance__button:hover:before {
+    width: 101%;
+}
 
 @media screen and (max-width: 768px) {
-    .afisha-perfomance__card__button {
+    .afisha-perfomance__button {
         margin: 40px 27px 0 0;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .afisha-perfomance__card__button:last-child {
+    .afisha-perfomance__button:last-child {
         margin-right: 0;
     }
-} 
-
-.afisha-perfomance__card__button:hover {
-    background-color: #242424;
-    color: #ECEBE8;
 } 
 

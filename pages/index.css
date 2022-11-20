@@ -35,6 +35,7 @@
 @import url('../blocks/intro/__heading/intro__heading.css');
 @import url('../blocks/intro/__subheading/inrto__subheading.css');
 @import url('../blocks/intro/__picture/intro__picture.css');
+@import url('../blocks/intro/__container-picture/intro__container-picture.css');
 
 /* стили для блока about */
 @import url('../blocks/about/about.css');

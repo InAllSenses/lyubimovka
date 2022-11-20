@@ -1,0 +1,4 @@
+.intro__container-picture {
+    grid-area: picture;
+    overflow: hidden;
+}
