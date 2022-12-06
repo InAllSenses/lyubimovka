@@ -1,3 +1,3 @@
 # lyubimovka
 
-[ссылка на GitHub Pages проекта](https://kareivis96.github.io/lyubimovka/)
+[ссылка на GitHub Pages проекта](inallsenses.github.io/lyubimovka/)
