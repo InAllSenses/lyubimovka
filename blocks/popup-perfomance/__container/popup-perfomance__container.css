@@ -1,0 +1,8 @@
+.popup-perfomance__container {
+display: flex;
+flex-direction: column;
+min-height: 300px;
+width: 500px;
+background-color: white;
+border-radius: 5px;
+}

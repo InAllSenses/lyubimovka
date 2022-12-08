@@ -1,0 +1,10 @@
+.popup-perfomance__header {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+
+    padding: 0;
+    margin: 32px 10px 0;
+}

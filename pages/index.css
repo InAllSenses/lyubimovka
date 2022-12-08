@@ -144,9 +144,21 @@
 @import url('../blocks/footer/__line/footer__line.css');
 @import url('../blocks/footer/__link/footer__link.css');
 
-/* стили для popup*/
+/* стили для popup */
+@import url('../blocks/popup/popup.css');
+
+
+/* стили для popup-image */
 @import url('../blocks/popup-image/popup-image.css');
 @import url('../blocks/popup-image/__close/popup-image__close.css');
 @import url('../blocks/popup-image/__content/popup-image__content.css');
 @import url('../blocks/popup-image/__container/popup-image__container.css');
 @import url('../blocks/popup-image/_visible/popup-image_visible.css');
+
+/* стили для popup-perfomance */
+@import url('../blocks/popup-perfomance/popup-perfomance.css');
+@import url('../blocks/popup-perfomance/__button/popup-perfomance__button.css');
+@import url('../blocks/popup-perfomance/__container/popup-perfomance__container.css');
+@import url('../blocks/popup-perfomance/__header/popup-perfomance__header.css');
+@import url('../blocks/popup-perfomance/__text/popup-perfomance__text.css');
+@import url('../blocks/popup-perfomance/__close/popup-perfomance__close.css');

@@ -1,0 +1,29 @@
+.popup-perfomance__button {
+    display: flex;
+
+    position: absolute;
+    bottom: 0px;
+    height: 42px;
+    width: 200px;
+    margin: 20px auto 10px;
+
+    
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Formular';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    
+
+    border: 1px solid #242424;
+    /* border-top: none;
+    border-right: none; */
+
+    position: relative;
+    background: none;
+    cursor: pointer;
+    z-index: 1;
+}

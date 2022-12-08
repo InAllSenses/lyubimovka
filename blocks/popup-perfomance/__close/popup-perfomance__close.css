@@ -1,0 +1,12 @@
+.popup-perfomance__close {
+    background-image: url(../images/krestik.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    height: 42px;
+    width: 42px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    
+    align-self: flex-end;
+}
