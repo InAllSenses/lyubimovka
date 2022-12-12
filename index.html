@@ -1,4 +1,4 @@
-﻿h<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -272,10 +272,25 @@
         <div class="cooperation__icon-star"></div>
         <h2 class="cooperation__title">Проект открыт к сотрудничеству</h2>
         <div class="cooperation__text">
-        <p class="cooperation__subtitle">Мы находимся в постоянном поиске режиссёров и актеров, заинтересованных в
+          <p class="cooperation__subtitle">Мы находимся в постоянном поиске режиссёров и актеров, заинтересованных в
           постановке читок.</p>
-        <p class="cooperation__subtitle">Пишите на <a class="cooperation__link" href="">more@lubimovka.ru</a></p>
-      </div>
+          <p class="cooperation__subtitle">Оставить свою заявку:</p>
+        </div>
+        <div>
+          <form name="name">
+            <input>Имя Фамилия</input>
+          </form>
+          <form name="profession">
+            <input>На какую профессию претендуете?</input>
+          </form>
+          <form name="phone">
+            <input type="number" placeholder="+7 (---) -- --">Номер телефона</input>
+          </form>
+          <form name="mail">
+            <input>Почта</input>
+          </form>
+          <button type="submit" class="cooperation__button">Хочу быть частью команды</button>
+        </div>
       </div>
     </section>
 
@@ -342,7 +357,8 @@
     <figure class="popup-image__container">
       <button type="button" class="popup_close popup-image__close"></button>
       <img class="popup-image__content" src="./blocks/gallery/images/Rectangle158.jpg" alt="картинка не загрузилась">
-      <button type="button" class="popup-image__arrow"></button>
+      <button type="button" class="popup-image__arrow popup-image__arrow_left"></button>
+      <button type="button" class="popup-image__arrow popup-image__arrow_right"></button>
     </figure>
   </div>
 

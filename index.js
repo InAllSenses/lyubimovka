@@ -32,9 +32,23 @@ function getNextIndex() {
   return nextIndex;
 }
 
+function getPreviousIndex() {
+  const currentIndex = getCurrentIndex();
+  let previousIndex = currentIndex-1;
+  if (previousIndex === -1)
+    previousIndex = images.length-1;
+
+  return previousIndex;
+}
+
 function getNextImage() {
   const nextIndex = getNextIndex();
   return images[nextIndex];
+}
+
+function getPreviousImage() {
+  const previousIndex = getPreviousIndex();
+  return images[previousIndex];
 }
 
 function switchImageToNext() {
@@ -43,11 +57,25 @@ function switchImageToNext() {
   currentImage = nextImage;
 }
 
+function switchImageToPrevious() {
+  const previousImage = getPreviousImage();
+  popupImageElement.src = previousImage.src;
+  currentImage = previousImage;
+}
+
 function addEventListenerArrowRight() {
-  const popupArrowRightButton = document.querySelector('.popup-image__arrow')
+  const popupArrowRightButton = document.querySelector('.popup-image__arrow_right')
 
   popupArrowRightButton.addEventListener("click", () => {
     switchImageToNext();
+  });
+}
+
+function addEventListenerArrowLeft() {
+  const popupArrowLeftButton = document.querySelector('.popup-image__arrow_left')
+
+  popupArrowLeftButton.addEventListener("click", () => {
+    switchImageToPrevious();
   });
 }
 
@@ -71,3 +99,4 @@ images.forEach(image => {
 addEventListenerClose(imagePopup);
 addEventListenerClose(perfomancePopup);
 addEventListenerArrowRight(imagePopup);
+addEventListenerArrowLeft(imagePopup);

@@ -1,9 +1,5 @@
 .popup-image__arrow {
-    background-image: url(../image/arrow.png);
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
-    border: none;
     height: 50px;
-    width: 100px;
+    width: 50px;
+    background-color: white;
 }
