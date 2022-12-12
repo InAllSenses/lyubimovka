@@ -1,8 +1,9 @@
 .popup-perfomance__container {
 display: flex;
 flex-direction: column;
+justify-content: space-between;
 min-height: 300px;
-width: 500px;
+width: 900px;
 background-color: white;
 border-radius: 5px;
 }
