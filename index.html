@@ -277,12 +277,14 @@
           <p class="cooperation__subtitle">Оставить свою заявку:</p>
           <button class="cooperation__arrow-down"></button>
         </div>
-        <div class="cooperation__forms">
-          <form class="cooperation__form" name="name-form">
-            <input class="cooperation__input" type="text" name="name" placeholder="Иван Петров">Имя Фамилия</input>
-          </form>
-          <form class="cooperation__form" name="profession-form">
-            <select class="cooperation__input" name="profession" placeholder="Выберите профессию" minlength="9" maxlength="11">
+
+        <form class="cooperation__forms" novalidate>
+          <label class="cooperation__form" name="name-form">Имя и фамилия:
+            <input id="name-input" class="cooperation__input" type="text" name="name" placeholder="Иван Петров" minlength="2" maxlength="40" required>
+            <span class="cooperation__name-input cooperation__input-error">Необходимо заполнить данное поле</span>
+          </label>
+          <label class="cooperation__form" name="profession-form">Претендуемая должность:
+            <select class="cooperation__input" name="profession" placeholder="Выберите профессию" required>
               <option value="actor">Актёр</option>
               <option value="director">Режиссёр</option>
               <option value="forward">Звукорежиссёр</option>
@@ -290,15 +292,17 @@
               <option value="forward">Костюмер</option>
               <option value="forward">Другое</option>
             </select>
-          </form>
-          <form class="cooperation__form" name="phone-form">
-            <input class="cooperation__input" type="number" name="phone" placeholder="+7 (---) -- --">Номер телефона</input>
-          </form>
-          <form class="cooperation__form" name="mail-form">
-            <input class="cooperation__input" type="text" name="mail" placeholder="kotik@___.ru">Почта</input>
-          </form>
+          </label>
+          <label class="cooperation__form" name="phone-form">Номер телефона:
+            <input id="phone-input" class="cooperation__input" type="number" name="phone" placeholder="8 (---) -- --" minlength="8" maxlength="8" required>
+            <span class="cooperation__phone-input cooperation__input-error">Необходимо заполнить данное поле</span>
+          </label>
+          <label class="cooperation__form" name="email-form">Электронная почта:
+            <input id="email-input" class="cooperation__input" type="email" name="email" placeholder="kotik@___.ru" required>
+            <span class="cooperation__email-input cooperation__input-error">Необходимо заполнить данное поле</span>
+          </label>
           <button type="submit" class="cooperation__button">Хочу быть частью команды</button>
-        </div>
+        </form>
       </div>
     </section>
 
@@ -364,7 +368,7 @@
   <div class="popup popup-image">
     <figure class="popup-image__container">
       <button type="button" class="popup_close popup-image__close"></button>
-      <img class="popup-image__content" src="./blocks/gallery/images/Rectangle158.jpg" alt="картинка не загрузилась">
+      <img class="popup-image__content" src="./blocks/gallery/images/Rectangle158.png" alt="картинка не загрузилась">
       <button type="button" class="popup-image__arrow popup-image__arrow_left"></button>
       <button type="button" class="popup-image__arrow popup-image__arrow_right"></button>
     </figure>

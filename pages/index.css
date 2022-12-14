@@ -85,6 +85,8 @@
 @import url('../blocks/cooperation/__form/cooperation__form.css');
 @import url('../blocks/cooperation/__input/cooperation__input.css');
 @import url('../blocks/cooperation/__arrow-down/cooperation__arrow-down.css');
+@import url('../blocks/cooperation/_error/cooperation__input_type_error.css');
+@import url('../blocks/cooperation/__input-error/cooperation__input-error.css');
 
 /* стили блока youtube-button */
 @import url('../blocks/youtube-button/youtube-button.css');

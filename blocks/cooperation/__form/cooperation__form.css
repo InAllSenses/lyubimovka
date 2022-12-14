@@ -1,4 +1,6 @@
 .cooperation__form {
-    margin: 10px 0;
-    
+    margin: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
 }

@@ -5,13 +5,33 @@ const perfomancePopup = document.querySelector('.popup-perfomance');
 
 let currentImage = null;
 
+const formsElement = document.querySelector('.cooperation__forms');
+const formInput = formsElement.querySelector('.cooperation__input');
+const formButton = formsElement.querySelector('.cooperation__button');
 
-const formButton = document.querySelector('.cooperation__button');
-const nameform = document.querySelector('.name-form');
-const forms = document.querySelector('.forms');
+const formError = formsElement.querySelector(`.${formInput.id}-error`); 
 
-const formsOpenButton = document.querySelector('.cooperation__arrow-down')
+const showInputError = (element) => {
+  element.classList.add('cooperation__input_type_error');
+};
 
+const hideInputError = (element) => {
+  element.classList.remove('cooperation__input_type_error');
+};
+
+const isValid = () => {
+  if (!formInput.validity.valid) {
+    showInputError(formInput);
+  } else {
+    hideInputError(formInput);
+  }
+};
+
+formInput.addEventListener('input', isValid); 
+
+formInput.addEventListener('input', function (evt) {
+  console.log(evt.target.validity.valid);
+}); 
 
 formButton.addEventListener('submit', function (evt) {
   evt.preventDefault();
@@ -105,23 +125,6 @@ images.forEach(image => {
       currentImage = image;
   });
 });
-
-// function setSubmitButtonState(isFormValid) {
-//   if (isFormValid) {
-//     formButton.removeAttribute('disabled');
-//     formButton.classList.remove('input__btn_disabled');
-//   }
-//   else {
-//     formButton.setAttribute('disabled', true);
-//     formButton.classList.add('input__btn_disabled');
-//   }
-// }
-
-// nameform.addEventListener('input', function (evt) {
-//   const isValid = nameform.value.length > 4;
-//   setSubmitButtonState(isValid);
-//   forms.reset();
-// });
 
 
 addEventListenerClose(imagePopup);

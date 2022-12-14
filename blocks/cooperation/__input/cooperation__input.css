@@ -1,4 +1,14 @@
 .cooperation__input {
+    margin-top: 5px;
     padding: 5px 5px;
     border-radius: 5px;
 }
+
+.cooperation__input:invalid {
+    border: 1px solid red;
+  } 
+  
+  .cooperation__input:valid {
+    border: 1px solid green;
+  } 
+
