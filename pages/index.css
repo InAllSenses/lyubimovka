@@ -72,6 +72,7 @@
 @import url('../blocks/afisha-perfomance/_one-play/afisha-perfomance__title_one-play.css');
 @import url('../blocks/afisha-perfomance/_one-play/afisha-perfomance__card_one-play.css');
 
+/* стили блока cooperation */
 @import url('../blocks/cooperation/cooperation.css');
 @import url('../blocks/cooperation/__info/cooperation__info.css');
 @import url('../blocks/cooperation/__title/cooperation__title.css');
@@ -79,6 +80,11 @@
 @import url('../blocks/cooperation/__icon-star/cooperation__icon-star.css');
 @import url('../blocks/cooperation/__text/cooperation__text.css');
 @import url('../blocks/cooperation/__link/cooperation__link.css');
+@import url('../blocks/cooperation/__button/cooperation__button.css');
+@import url('../blocks/cooperation/__forms/cooperation__forms.css');
+@import url('../blocks/cooperation/__form/cooperation__form.css');
+@import url('../blocks/cooperation/__input/cooperation__input.css');
+@import url('../blocks/cooperation/__arrow-down/cooperation__arrow-down.css');
 
 /* стили блока youtube-button */
 @import url('../blocks/youtube-button/youtube-button.css');

@@ -65,14 +65,14 @@
     <section class="gallery">
       <h2 class="gallery__title">Заголовок блока с фотографиями</h2>
       <div class="gallery__grid">
-        <img class="gallery__image" src="./blocks/gallery/images/Rectangle198.jpg" alt="Фото">
-        <img class="gallery__image" src="./blocks/gallery/images/Rectangle193.jpg" alt="Фото">
-        <img class="gallery__image" src="./blocks/gallery/images/Rectangle194.jpg" alt="Фото">
-        <img class="gallery__image" src="./blocks/gallery/images/Rectangle158.jpg" alt="Фото">
-        <img class="gallery__image" src="./blocks/gallery/images/Rectangle160.jpg" alt="Фото">
-        <img class="gallery__image" src="./blocks/gallery/images/Rectangle195.jpg" alt="Фото">
-        <img class="gallery__image" src="./blocks/gallery/images/Rectangle196.jpg" alt="Фото">
-        <img class="gallery__image" src="./blocks/gallery/images/Rectangle197.jpg" alt="Фото">
+        <img class="gallery__image" src="./blocks/gallery/images/Rectangle198.png" alt="Фото">
+        <img class="gallery__image" src="./blocks/gallery/images/Rectangle193.png" alt="Фото">
+        <img class="gallery__image" src="./blocks/gallery/images/Rectangle194.png" alt="Фото">
+        <img class="gallery__image" src="./blocks/gallery/images/Rectangle158.png" alt="Фото">
+        <img class="gallery__image" src="./blocks/gallery/images/Rectangle160.png" alt="Фото">
+        <img class="gallery__image" src="./blocks/gallery/images/Rectangle195.png" alt="Фото">
+        <img class="gallery__image" src="./blocks/gallery/images/Rectangle196.png" alt="Фото">
+        <img class="gallery__image" src="./blocks/gallery/images/Rectangle197.png" alt="Фото">
       </div>
     </section>
 
@@ -275,19 +275,27 @@
           <p class="cooperation__subtitle">Мы находимся в постоянном поиске режиссёров и актеров, заинтересованных в
           постановке читок.</p>
           <p class="cooperation__subtitle">Оставить свою заявку:</p>
+          <button class="cooperation__arrow-down"></button>
         </div>
-        <div>
-          <form name="name">
-            <input>Имя Фамилия</input>
+        <div class="cooperation__forms">
+          <form class="cooperation__form" name="name-form">
+            <input class="cooperation__input" type="text" name="name" placeholder="Иван Петров">Имя Фамилия</input>
           </form>
-          <form name="profession">
-            <input>На какую профессию претендуете?</input>
+          <form class="cooperation__form" name="profession-form">
+            <select class="cooperation__input" name="profession" placeholder="Выберите профессию" minlength="9" maxlength="11">
+              <option value="actor">Актёр</option>
+              <option value="director">Режиссёр</option>
+              <option value="forward">Звукорежиссёр</option>
+              <option value="forward">Рабочий сцены</option>
+              <option value="forward">Костюмер</option>
+              <option value="forward">Другое</option>
+            </select>
           </form>
-          <form name="phone">
-            <input type="number" placeholder="+7 (---) -- --">Номер телефона</input>
+          <form class="cooperation__form" name="phone-form">
+            <input class="cooperation__input" type="number" name="phone" placeholder="+7 (---) -- --">Номер телефона</input>
           </form>
-          <form name="mail">
-            <input>Почта</input>
+          <form class="cooperation__form" name="mail-form">
+            <input class="cooperation__input" type="text" name="mail" placeholder="kotik@___.ru">Почта</input>
           </form>
           <button type="submit" class="cooperation__button">Хочу быть частью команды</button>
         </div>

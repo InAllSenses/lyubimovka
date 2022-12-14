@@ -6,6 +6,17 @@ const perfomancePopup = document.querySelector('.popup-perfomance');
 let currentImage = null;
 
 
+const formButton = document.querySelector('.cooperation__button');
+const nameform = document.querySelector('.name-form');
+const forms = document.querySelector('.forms');
+
+const formsOpenButton = document.querySelector('.cooperation__arrow-down')
+
+
+formButton.addEventListener('submit', function (evt) {
+  evt.preventDefault();
+});
+
 function showPopup(popupElement) {
   popupElement.classList.add('popup_visible');
 }
@@ -94,6 +105,23 @@ images.forEach(image => {
       currentImage = image;
   });
 });
+
+// function setSubmitButtonState(isFormValid) {
+//   if (isFormValid) {
+//     formButton.removeAttribute('disabled');
+//     formButton.classList.remove('input__btn_disabled');
+//   }
+//   else {
+//     formButton.setAttribute('disabled', true);
+//     formButton.classList.add('input__btn_disabled');
+//   }
+// }
+
+// nameform.addEventListener('input', function (evt) {
+//   const isValid = nameform.value.length > 4;
+//   setSubmitButtonState(isValid);
+//   forms.reset();
+// });
 
 
 addEventListenerClose(imagePopup);

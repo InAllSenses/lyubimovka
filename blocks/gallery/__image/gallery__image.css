@@ -4,3 +4,9 @@
         object-fit: contain;
         object-position: center;
 }
+
+.gallery__image:hover {
+        outline: 2px solid #B7C09D;;
+        outline-offset: -7px;
+        cursor: pointer;
+}

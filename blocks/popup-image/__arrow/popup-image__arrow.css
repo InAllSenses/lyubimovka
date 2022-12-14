@@ -3,3 +3,7 @@
     width: 50px;
     background-color: white;
 }
+
+.popup-image__arrow:hover {
+    cursor: pointer;
+}

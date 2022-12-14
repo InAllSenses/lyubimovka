@@ -1,0 +1,14 @@
+.cooperation__arrow-down {
+    width: 100px;
+    height: 50px;
+    background-image: url(../images/Down-Arrow.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    border: none;
+    margin: 0 0 0 50px;
+}
+
+.cooperation__arrow-down:hover {
+    cursor: pointer;
+}
