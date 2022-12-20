@@ -2,6 +2,8 @@ const images = document.querySelectorAll('.gallery__image');
 const imagePopup = document.querySelector('.popup-image');
 const popupImageElement = imagePopup.querySelector('.popup-image__content');
 const perfomancePopup = document.querySelector('.popup-perfomance');
+const perfomanceButtons = document.querySelectorAll('.afisha-perfomance__button_play');
+
 
 let currentImage = null;
 
@@ -10,6 +12,7 @@ const formInput = formsElement.querySelector('.cooperation__input');
 const formButton = formsElement.querySelector('.cooperation__button');
 
 const formError = formsElement.querySelector(`.${formInput.id}-error`); 
+
 
 const showInputError = (element) => {
   element.classList.add('cooperation__input_type_error');
@@ -126,6 +129,11 @@ images.forEach(image => {
   });
 });
 
+perfomanceButtons.forEach(aboutPerfomanceButton => {
+  aboutPerfomanceButton.addEventListener('click', evt => {
+    showPopup(perfomancePopup);
+  });
+})
 
 addEventListenerClose(imagePopup);
 addEventListenerClose(perfomancePopup);
